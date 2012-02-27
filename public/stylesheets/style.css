@@ -1,0 +1,127 @@
+body{
+	background-image:url(/images/farmer.png);
+}
+
+#heading{	
+	margin-top:140px;
+	font-family:"Trebuchet MS", sans-serif;
+	text-align:center;
+	font-size:48px;
+}
+
+#signin{
+	width:400px;
+	height:300px;
+	margin:0 auto;
+	background-color:rgba(255,255,255,0.3);
+	border-radius:20px;
+	box-shadow:1px 1px 5px #999;
+}
+
+#signin_form{
+	width:300px;
+	margin:0 auto;
+	font-family: "Lucida Grande", sans-serif;
+	font-size:28px;
+}
+
+.normal_input{
+	border:none;
+	width:200px;
+	height:40px;
+	border-radius:5px;
+	background-color:rgba(255,255,235, 0.3);
+	outline:none;
+	font-size:28px;
+}
+
+#name{
+	margin-top:80px;
+}
+
+#room{
+	margin-top:20px;
+	margin-left:2px;
+}
+
+#submit{
+	margin-top:30px;
+	margin-left:120px;
+}
+
+
+/*
+	CHAT ROOM STYLES
+*/
+
+#messagefeed{
+	width:900px;
+	height:500px;
+	background-color:rgba(255,255,255,0.3);
+	margin:0 auto;
+	overflow-y:scroll;
+	word-wrap:break-word;
+	margin-top:10px;
+	border-radius:5px;
+	
+}
+#chat_form{
+	width:600px;
+	margin:10px auto;
+
+}
+
+#chat_input{
+		width:500px;
+		margin:0;
+}
+
+#submit_chat{
+}
+.submit_button{
+	width:80px;
+	height:40px;
+	margin:0;
+	background-color:black;
+	background-image:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,225,1));
+	border-left:1px rgba(255,255,225,1);
+	border-top:1px rgba(255,255,225,1);
+	border-right:1px rgba(255,255,255,1);
+	border-bottom:1px rgba(255,255,255,1);
+	border-radius:2px;
+	position:relative;
+	bottom:7px;
+	left:10px;
+}
+
+#home{
+	width:150px;
+	height:42px;
+	color:#EEE;
+	text-align:center;
+	background-color:rgba(255,255,255,1);
+	background-image:-webkit-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	font-size:28px;
+	border-left:1px rgba(255,255,255,1);
+	border-top:1px rgba(255,255,255,1);
+	border-right:1px rgba(255,255,255,1);
+	border-bottom:1px rgba(255,255,255,1);
+	border-radius:4px;
+	margin-left:10px;
+	margin-top:10px;
+	padding-top:8px;
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+

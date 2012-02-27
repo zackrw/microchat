@@ -1,0 +1,10 @@
+h1#heading microchat
+#signin
+	form#signin_form(method='post', action='/join')
+		| name:
+		input#name.normal_input(type="text", name="name")
+		br
+		| room:
+		input#room.normal_input(type="text", name="room")
+		br
+		input#submit.submit_button(type="submit", value="Go!")
