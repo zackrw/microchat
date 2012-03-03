@@ -1,6 +1,9 @@
 a(href='/')
 	#home home
+#roster 
+	#roster_title Room Members
+	#people
 #messagefeed
 form#chat_form(method='post')
-	input#chat_input.normal_input(type='text')
+	input#chat_input.normal_input(type='text', autocomplete='off')
 	input#submit_chat.submit_button(type='submit', value="send")

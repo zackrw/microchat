@@ -1,5 +1,5 @@
 body{
-	background-image:url(/images/farmer.png);
+	background-image:url(/images/farmer_whiter.png);
 }
 
 #heading{	
@@ -13,9 +13,13 @@ body{
 	width:400px;
 	height:300px;
 	margin:0 auto;
-	background-color:rgba(255,255,255,0.3);
+	background-color:rgba(255,255,255,0.4);
 	border-radius:20px;
-	box-shadow:1px 1px 5px #999;
+	box-shadow: 1px 2px 5px #CCC;
+	-moz-box-shadow: 1px 2px 5px #CCC;
+	-webkit-box-shadow: 1px 2px 5px #CCC;
+	-ms-box-shadow: 1px 2px 5px #CCC;
+	-o-box-shadow: 1px 2px 5px #CCC;
 }
 
 #signin_form{
@@ -30,9 +34,14 @@ body{
 	width:200px;
 	height:40px;
 	border-radius:5px;
-	background-color:rgba(255,255,235, 0.3);
+	background-color:rgba(255,255,255, 0.4);
 	outline:none;
 	font-size:28px;
+	box-shadow: 1px 2px 4px #CCC;
+	-moz-box-shadow: 1px 2px 4px #CCC;
+	-webkit-box-shadow: 1px 2px 4px #CCC;
+	-ms-box-shadow: 1px 2px 4px #CCC;
+	-o-box-shadow: 1px 2px 4px #CCC;
 }
 
 #name{
@@ -46,7 +55,7 @@ body{
 
 #submit{
 	margin-top:30px;
-	margin-left:120px;
+	margin-left:110px;
 }
 
 
@@ -57,23 +66,38 @@ body{
 #messagefeed{
 	width:900px;
 	height:500px;
-	background-color:rgba(255,255,255,0.3);
+	background-color:rgba(255,255,255,0.4);
 	margin:0 auto;
 	overflow-y:scroll;
 	word-wrap:break-word;
 	margin-top:10px;
 	border-radius:5px;
-	
+	box-shadow: 3px 3px 5px #CCC;
+	-moz-box-shadow: 3px 3px 5px #CCC;
+	-webkit-box-shadow: 3px 3px 5px #CCC;
+	-ms-box-shadow: 3px 3px 5px #CCC;
+	-o-box-shadow: 3px 3px 5px #CCC;
+	position:relative;
+	right:40px;
 }
+
+#messagefeed p{
+	margin-left:5px;
+}
+
+
 #chat_form{
 	width:600px;
 	margin:10px auto;
+	position:relative;
+	left:50px;
 
 }
 
 #chat_input{
 		width:500px;
 		margin:0;
+		padding-left:5px;
 }
 
 #submit_chat{
@@ -83,17 +107,25 @@ body{
 	height:40px;
 	margin:0;
 	background-color:black;
-	background-image:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,225,1));
-	border-left:1px rgba(255,255,225,1);
-	border-top:1px rgba(255,255,225,1);
+	border-left:1px rgba(255,255,255,1);
+	border-top:1px rgba(255,255,255,1);
 	border-right:1px rgba(255,255,255,1);
 	border-bottom:1px rgba(255,255,255,1);
-	border-radius:2px;
+	border-radius:4px;
 	position:relative;
-	bottom:7px;
+	bottom:6px;
 	left:10px;
+	background-image:-webkit-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-moz-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-ms-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-o-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	color:#EEE;
+	box-shadow: 2px 2px 4px #CCC;
+	-moz-box-shadow: 2px 2px 4px #CCC;
+	-webkit-box-shadow: 2px 2px 4px #CCC;
+	-ms-box-shadow: 2px 2px 4px #CCC;
+	-o-box-shadow: 2px 2px 4px #CCC;
 }
-
 #home{
 	width:150px;
 	height:42px;
@@ -101,13 +133,16 @@ body{
 	text-align:center;
 	background-color:rgba(255,255,255,1);
 	background-image:-webkit-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-moz-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-ms-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
+	background-image:-o-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
 	font-size:28px;
 	border-left:1px rgba(255,255,255,1);
 	border-top:1px rgba(255,255,255,1);
 	border-right:1px rgba(255,255,255,1);
 	border-bottom:1px rgba(255,255,255,1);
 	border-radius:4px;
-	margin-left:10px;
+	margin-left:20px;
 	margin-top:10px;
 	padding-top:8px;
 	
@@ -121,7 +156,43 @@ a:hover{
 	text-decoration:underline;
 }
 
+#roster{
+	float:left;
+	margin-left:30px;
+	font-size:18px;
+	min-width:100px;
+}
 
+#roster_title{
+	border-bottom:1px solid #222;
+	margin-top:30px;
+}
 
+#roster p{
+	font-size:16px;
+	margin-left:4px;
+}
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(60,60,60,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(60,60,60,0.4); 
+}
 
