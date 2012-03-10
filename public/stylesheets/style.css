@@ -131,7 +131,7 @@ body{
 	height:42px;
 	color:#EEE;
 	text-align:center;
-	background-color:rgba(255,255,255,1);
+	background-color:#000;
 	background-image:-webkit-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
 	background-image:-moz-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
 	background-image:-ms-linear-gradient(top, rgba(95,95,95,1), rgba(25,25,25,1));
