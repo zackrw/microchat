@@ -159,7 +159,9 @@ sio.sockets.on('connection', function(socket){
 		}
 		//sio.sockets.in(hs.session.room).emit('sendroom', rooms[hs.session.room]);
 		socket.leave(hs.session.room);
-		socket.broadcast.to(hs.session.room).emit('newchat', "Notice", hs.session.name + " just peaced out.", "#222");
+		if(hs.session.name){
+			socket.broadcast.to(hs.session.room).emit('newchat', "Notice", hs.session.name + " just peaced out.", "#222");
+		}
 		socket.broadcast.to(hs.session.room).emit('sendroom', rooms[hs.session.room]);
 		hs.session.room = undefined;
 	});

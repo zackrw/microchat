@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var socket = io.connect("http://microchat.nodejitsu.com/");
+	var socket = io.connect("http://microchat.jit.su/");
 	//var socket = io.connect("http://localhost:3000/");
 	/*$('#signin_form').submit(function(){
 		var name = $('#name').val();

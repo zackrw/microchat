@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var socket = io.connect("http://microchat.nodejitsu.com/");
+	var socket = io.connect("http://microchat.jit.su/");
 	//var socket = io.connect("http://localhost:3000/");
 	var room = window.location.href.split('/');
 	if(room[room.length - 1]){
