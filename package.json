@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-40",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "express": "2.5.5",
@@ -14,5 +14,14 @@
   "name": "microchat",
   "engines": {
     "node": "v0.6.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "author": "Zack Reneau-Wedeen (zackrw.com)",
+  "description": "A pretty inelegant little chat app with socket.io",
+  "homepage": "microchat.jit.su",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xaq2892/microchat.git"
   }
 }
