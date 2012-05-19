@@ -19,7 +19,7 @@ $(document).ready(function(){
 	$('#chat_form').submit(function(){
 		var message = $('#chat_input').val();
 		socket.emit('chatmessage', message);
-		var message = $('#chat_input').val('');
+		message = $('#chat_input').val('');
 		return false;
 	});
 
@@ -28,7 +28,6 @@ $(document).ready(function(){
 		chatBox.scrollTop = chatBox.scrollHeight;
 	});
 	
-	//socket.emit('getroom');
 	socket.on('sendroom', function(room){
 		roster.html('');
 		for(var i = 0; i < room.length; i++){

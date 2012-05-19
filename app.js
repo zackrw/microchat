@@ -197,6 +197,12 @@ function checkAuth(req, res, next){
 //GET
 app.get('/', routes.index);
 app.get('/rooms/:room', checkAuth, routes.room);
+app.get('/rooms', function(req, res){
+	res.redirect("/");
+});
+app.get('/rooms/', function(req, res){
+	res.redirect("/");
+});
 
 //POST
 app.post('/join', routes.join);

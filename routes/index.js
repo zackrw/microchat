@@ -13,12 +13,12 @@ exports.index = function(req, res){
 	}
 		req.session.recentRoom = '';
 		console.log("VALUE: " + value);
-  	res.render('index', { title: 'Home', value: value })
+  	res.render('index', { title: 'Home', value: value, type: 'home' });
 };
 
 exports.room = function(req, res){
-	res.render('room', {title: 'Room', layout:'layout2' });
-}
+	res.render('room', {title: 'Room', type: 'room' });
+};
 
 exports.join = function(req, res){
 	var name = req.body.name;
@@ -26,4 +26,4 @@ exports.join = function(req, res){
 	var room = req.body.room;
 	req.session.room = room;
 	res.redirect('/rooms/' + room);
-}
+};
